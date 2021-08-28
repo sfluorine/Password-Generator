@@ -9,9 +9,9 @@ char * genPass(size_t size)
   char * buffer = NULL;
   char input;
 
-  if (size < 8)
+  if (size < 16)
   {
-    printf("Your password length is less than 8 characters, continue? y / n: ");
+    printf("Your password length is %d characters which is less than 16 characters, continue? y / n: ", (int)size);
     input = getc(stdin);
   
     if (input == 'y') 
